@@ -216,10 +216,10 @@ http://gridcalculator.dk/#/1572/12/20/16
     transition: 3s 0.5s;
 }
 
-.main__visual .wheel {
+.main__visual .wheel__ {
     position: absolute;
     left: 100px;
-    bottom: 150px;
+    bottom: 100px;
     transform: translate(-50%, 0);
     width: 30px;
     height: 45px;
@@ -227,7 +227,7 @@ http://gridcalculator.dk/#/1572/12/20/16
     border-radius: 15px;
 }
 
-.main__visual .wheel::after {
+.main__visual .wheel__::after {
     content: "";
     position: absolute;
     top: 5px;
@@ -250,6 +250,24 @@ http://gridcalculator.dk/#/1572/12/20/16
     100% {
         transform: translate(-50%, 5px);
     }
+}
+
+.main__visual .banner__ {
+    position: absolute;
+    bottom: 180px;
+    left: 50px;
+
+    display: flex;
+    gap: 40px;
+
+}
+
+/* https://bennettfeely.com/clippy/ */
+.main__visual .banner__ li {
+    width: 200px;
+    height: 220px;
+    background: var(--mc);
+    clip-path: polygon(0 15%, 50% 0, 100% 15%, 100% 85%, 50% 100%, 0 85%);
 }
 
 
