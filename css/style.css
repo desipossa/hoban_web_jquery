@@ -149,22 +149,22 @@ http://gridcalculator.dk/#/1572/12/20/16
 
 .main__visual .right__inner {
   height: 100vh;
-  padding: 100px 0;
+  padding: 120px 0 0 0;
 }
 
 .main__visual .visual__slide {
-  height: calc(100vh - 200px);
+  height: calc(100vh - 120px);
   min-height: 500px;
 }
 
 .main__visual .itm {
   position: relative;
-  height: calc(100vh - 200px);
+  height: calc(100vh - 120px);
   min-height: 500px;
 
   background-size: 120% auto;
   background-repeat: no-repeat;
-  transition: 2s 0.5s;
+  transition: 4s 0.5s;
 }
 
 .main__visual .itm.on {
@@ -319,12 +319,12 @@ http://gridcalculator.dk/#/1572/12/20/16
 .main__visual .tit {
   position: absolute;
   top: 150px;
-  left: 200px;
+  left: 250px;
   width: 200px;
   transform: translate(-100px, 0);
   opacity: 0;
 
-  transition: 1s 1s;
+  transition: 1s;
 }
 
 .main__visual .itm.on .tit {
@@ -384,7 +384,8 @@ http://gridcalculator.dk/#/1572/12/20/16
 }
 
 .main_premium {
-  background: url(../images/content_bg01.jpg) no-repeat center center/cover;
+  background: url(../images/content_bg01.jpg) no-repeat center 120px/100%
+    calc(100vh - 120px);
 }
 
 .main_premium .txt_area em {
