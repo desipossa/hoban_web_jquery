@@ -53,6 +53,29 @@ $(function () {
         autoplay: true,
         autoplaySpeed: 5000,
         pauseOnHover: false,
-    })
+    });
+
+
+
+
+    $('.preminu_slide').on('init afterChange', function (e, s, idx) {
+        const current = $('.preminu_slide .slick-current');
+        current.addClass('on').siblings().removeClass('on');
+    });
+
+
+
+    $('.preminu_slide').slick({
+        arrows: false,
+        slidesToShow: 4,
+        speed: 100,
+        pauseOnHover: false,
+        pauseOnFocus: false,
+    });
+
+
+
+
+
 
 })
