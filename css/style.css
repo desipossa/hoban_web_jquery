@@ -316,6 +316,10 @@ http://gridcalculator.dk/#/1572/12/20/16
   font-size: 40px;
   font-weight: 700;
 }
+.main__visual .banner__ li a span {
+  font-size: 40px;
+  font-variation-settings: "FILL" 0, "wght" 200, "GRAD" 0, "opsz" 24;
+}
 
 .main__visual .tit {
   position: absolute;
