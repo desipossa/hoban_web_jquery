@@ -83,6 +83,16 @@ $(function () {
     });
 
 
+    //clone menu
+
+    const NB = $('.gnb .nb').clone();
+    console.log(NB);
+    //clone 한 것을 넣기
+    $('.all__nb').append(NB);
+
+    $('.all__nb--btn').on('click', function () {
+        $('.all__nb .nb').toggleClass('on');
+    })
 
 
 
